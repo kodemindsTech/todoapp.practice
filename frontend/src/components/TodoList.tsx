@@ -22,7 +22,7 @@ export const TodoList: React.FC<TodoListProps> = ({ todos, onToggle, onDelete, i
     return (
       <div className="text-center py-12 text-gray-400 animate-fade-in">
         <p className="text-xl">No tasks yet.</p>
-        <p className="text-sm mt-2">Add a task above to get started!</p>
+        <p className="text-sm mt-2">Add a task above to get started</p>
       </div>
     );
   }
@@ -30,11 +30,11 @@ export const TodoList: React.FC<TodoListProps> = ({ todos, onToggle, onDelete, i
   return (
     <div className="space-y-1">
       {todos.map(todo => (
-        <TodoItem 
-          key={todo._id} 
-          todo={todo} 
-          onToggle={onToggle} 
-          onDelete={onDelete} 
+        <TodoItem
+          key={todo._id}
+          todo={todo}
+          onToggle={onToggle}
+          onDelete={onDelete}
         />
       ))}
     </div>
